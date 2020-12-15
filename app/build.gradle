@@ -1,6 +1,7 @@
 plugins {
   id 'com.android.application'
   id 'kotlin-android'
+  id 'com.github.jk1.dependency-license-report' version '1.16'
 }
 
 android {
@@ -30,6 +31,10 @@ android {
   kotlinOptions {
     jvmTarget = '1.8'
   }
+}
+
+licenseReport {
+  configurations = ['releaseRuntimeClasspath']
 }
 
 dependencies {

@@ -35,6 +35,12 @@ android {
 
 licenseReport {
   configurations = ['releaseRuntimeClasspath']
+
+//  None of these options help:
+//  projects = [project]
+//  excludeGroups = ['com.tfcporciuncula.dlrandroid.lib']
+//  excludes = [':lib']
+//  excludeOwnGroup = true
 }
 
 dependencies {
